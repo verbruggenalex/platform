@@ -1,0 +1,10 @@
+{
+    "name": "verbruggenalex/platform",
+    "require": {
+        "ec-europa/ssk": "dev-master as 3.0.0"
+    },
+    "scripts": {
+        "post-install-cmd": "PROJECT=$(pwd) composer install --working-dir=vendor/ec-europa/ssk/includes/composer --no-interaction --no-suggest --ansi",
+        "post-create-project-cmd": "PROJECT=$(pwd) composer install --working-dir=vendor/ec-europa/ssk/includes/composer --no-interaction --no-suggest --ansi"
+    }
+}
