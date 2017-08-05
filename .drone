@@ -1,0 +1,20 @@
+# Define the workspace ( working directory mounted everywhere )
+workspace:
+  base: /test
+  path: ssk
+
+# Define our pipeline
+pipeline:
+
+  # Run composer install while running the docker fpfis/php56-dev image
+  composer-install:
+    image: fpfis/php56-dev
+    commands:
+      - composer install
+      
+  # Build the site so we can have the final result to deploy
+  build-dist:
+    image: fpfis/php56-dev
+    commands:
+      - ./bin/phing build-dist -Dcomposer.bin=$(which composer) -logger phing.listener.AnsiColorLogger
+
