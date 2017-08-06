@@ -5,7 +5,7 @@
 ## Requirements
 
 <table><tbody align="left" valign="top"><tr>
-  <td>
+  <td width="33%">
   
 ### 1. Docker Only
 This requirement for docker only requires docker in docker support.
@@ -18,7 +18,7 @@ for seasond docker users.
 </details>
 
   </td>
-  <td>
+  <td width="33%">
 
 ### 2. Docker Plus
 Instead of having the absolute minimal requirement you can install the
@@ -33,7 +33,7 @@ configure a complicated docker installation.
 </details>
 
   </td>
-  <td>
+  <td width="33%">
 
 ### 3. Docker Zero
 If you are not interested in the advantages that the starterkit can give
@@ -43,7 +43,7 @@ everything you need.
 <details><summary><b>Required components <sup>(2)</sup></b></summary>
 
 
-* **[LAMP Stack](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7°$$
+* **[LAMP Stack](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7)**
 * **[Composer](https://getcomposer.org/)**
 </details>
 
@@ -73,42 +73,45 @@ deployments this can be useful.
 
 ## Build properties
 
+<table><tbody align="left" valign="top"><tr>
+  <td width="33%">
+  
 ### 1. build.properties.dist
-
-<details><p><summary>The template file provided by the toolkit. <sup><a name="more">(more)</a><sup></summary></p>
-
 This properties file contains the default settings and acts as a loading and
 documentation file for the system to work correctly. Any time you install the
 toolkit it will be copied to your repository root. Even though it is a template
 you should not remove this file, but commmit it to your repository. The reason
 for this is that it allows you to easily check the version of the toolkit and
 what new properties were introduced or deprecated.
-</summary></details>
+<details><summary><b>Requirements <sup>(2)</sup></b></summary>
 
-* Never alter this file
-* Always commit this file
+* **Never alter this file**
+* **Always commit this file**
+</details>
+
+  </td>
+  <td width="33%">
 
 ### 2. build.properties.project
-
-<details><p><summary>The project file that contains all needed information to build. <sup><a name="more">(more)</a><sup></summary></p>
 
 Always commit this file to your repository. This file is required for all
 NextEuropa projects. Without it your build system will fail with a build
 exception. It must contain a minimum set of properties, like project.id, etc.
 A list of required properties is still to be delivered. Aside from the
 required properties you can add any other properties that are project
-specific and do not contain any credentials. Any development environment
-specific properties need to be defined in the file below.
-</summary></details>
+specific and do not contain any credentials.
+<details><summary><b>Requirements <sup>(4)</sup></b></summary>
 
-* Required to build the project
-* Always commit this file
-* Never store credentials
-* Never store environment specific
+* **Required to build the project**
+* **Always commit this file**
+* **Never store credentials**
+* **Never store environment specific**
+</details>
+
+  </td>
+  <td width="33%">
 
 ### 3 build.properties.local
-
-<details><p><summary>The development file that you can play around with. <sup><a name="more">(more)</a><sup></summary></p>
 
 This file will contain configuration which is unique to your development
 environment. It is useful for specifying your database credentials and the
@@ -116,9 +119,13 @@ username and password of the Drupal admin user so they can be used during the
 installation. Next to credentials you have many development settings that you
 can change to your liking. Because these settings are personal they should
 not be shared with the rest of the team. Make sure you never commit this file.
-</summary></details>
+<details><summary><b>Requirements <sup>(1)</sup></b></summary>
 
 * Never commit
+</details>
+
+  </td>
+</tr></tbody></table>
 
 ## Listing the available build commands
 
