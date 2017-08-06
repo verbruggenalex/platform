@@ -22,9 +22,6 @@ build the projects.
 <td><b><a href="#nexteuropa">Previous</a></b></td>
 <td><b><a href="#installation">Next</a></b></td>
 </tr></table>
-
-<table><tbody align="left" valign="top"><tr>
-  <td width="33%">
   
 ### 1. Docker Only
 This requirement for docker only requires docker in docker support.
@@ -35,9 +32,6 @@ for seasond docker users.
 
 * **[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**
 </details>
-
-  </td>
-  <td width="33%">
 
 ### 2. Docker Plus
 Instead of having the absolute minimal requirement you can install the
@@ -51,9 +45,6 @@ configure a complicated docker installation.
 * **[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**
 </details>
 
-  </td>
-  <td width="34%">
-
 ### 3. Docker Zero
 If you are not interested in the advantages that the starterkit can give
 you with the provided docker images you can keep a normal host only setup.
@@ -65,9 +56,6 @@ everything you need.
 * **[LAMP Stack](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7)**
 * **[Composer](https://getcomposer.org/)**
 </details>
-
-  </td>
-</tr></tbody></table>
 
 ## Installation
 <table><tr>
@@ -102,9 +90,6 @@ deployments this can be useful.
 <td><b><a href="#nexteuropa">Top</a></b></td>
 <td><b><a href="#installation">Previous</a></b></td>
 </tr></table>
-
-<table><tbody align="left" valign="top"><tr>
-  <td width="33%">
   
 ### 1. build.properties.dist
 This properties file contains the default settings and acts as a loading and
@@ -118,9 +103,6 @@ what new properties were introduced or deprecated.
 * **Never alter**
 * **Always commit**
 </details>
-
-  </td>
-  <td width="33%">
 
 ### 2. build.properties.project
 
@@ -138,9 +120,6 @@ specific and do not contain any credentials.
 * **Needed for builds**
 </details>
 
-  </td>
-  <td width="33%">
-
 ### 3 build.properties.local
 
 This file will contain configuration which is unique to your development
@@ -153,9 +132,6 @@ not be shared with the rest of the team. Make sure you never commit this file.
 
 * **Never commit**
 </details>
-
-  </td>
-</tr></tbody></table>
 
 ## Listing the available build commands
 
