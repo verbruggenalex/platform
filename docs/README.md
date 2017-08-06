@@ -69,10 +69,12 @@ There are 3 different sets of build properties file that you can use. If you
 are unfamiliar with the purpose behind each different type of properties file
 please open the descriptions and read what they are designed for.
 
-<details><summary><b>build.properties.local</b><br>
-  <sup>
+<details><summary><b>build.properties.local</b>
+<!-- Keepit simple for now
+  <sup align="right">
     <code>never commit</code>
   </sup>
+-->
 </summary>
 
 This file will contain configuration which is unique to your development
@@ -84,10 +86,12 @@ not be shared with the rest of the team. Make sure you never commit this file.
 </details>
 <details><summary>
     <b>build.properties.dist</b><br>
+<!-- Keepit simple for now
     <sup>
       <code>never alter</code> 
       <code>always commit</code>
-    </sup>
+      </sup>
+-->
   </summary>
 
 This properties file contains the default settings and acts as a loading and
@@ -98,12 +102,14 @@ for this is that it allows you to easily check the version of the toolkit and
 what new properties were introduced or deprecated.
 </details>
 <details><summary><b>build.properties</b><br>
+<!-- Keepit simple for now
   <sup>
     <code>always commit</code> 
     <code>no credentials</code><br>
     <code>no environments</code> 
     <code>needed for builds</code>
   </sup>
+-->
 </summary>
 
 Always commit this file to your repository. This file is required for all
