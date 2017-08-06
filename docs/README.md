@@ -7,7 +7,7 @@
 <table><tbody align="left" valign="top"><tr>
   <td>
   
-### Docker Only
+### 1. Docker Only
 This requirement for docker only requires docker in docker support.
 The configuration to accomplish this is complicated and if implemented
 incorrectly can give you problems. We recommend this approach only
@@ -20,7 +20,7 @@ for seasond docker users.
   </td>
   <td>
 
-### Docker Plus
+### 2. Docker Plus
 Instead of having the absolute minimal requirement you can install the
 host level components Composer and Phing on the non-docker environment.
 Then this can spin up the docker containers for you without having to
@@ -35,7 +35,7 @@ configure a complicated docker installation.
   </td>
   <td>
 
-### Docker Zero
+### 3. Docker Zero
 If you are not interested in the advantages that the starterkit can give
 you with the provided docker images you can keep a normal host only setup.
 But it is very much recommended to use docker as it will give you
@@ -52,18 +52,21 @@ everything you need.
 
 ## Install the project
 
-Before we can build the NextEuropa platform we need to install the build system
-itself. This can be done using [composer](https://getcomposer.org/):
+The build system for nexteuropa projects is packaged in a toolkit that can
+be found here: [ec-europa/ssk](https://github.com/ec-europa/ssk). This is
+the only required composer package to set up your project. If your project
+is registered as a package as well you can use the composer create-project
+command to complete installation in one single command:
 
 ```
 $ composer create-project verbruggenalex/platform foldername dev-master
 ```
 
-This command will clone this repository and run composer install on the project.
-The "composer install" command will itself call another composer install to the
-ec-europa/ssk package that contains the build system. This package is being
-installed separately because changing files on this system might break the build
-system.
+This command will clone the repository and run composer install on the project.
+That command will itself call another composer install by the usage of the
+composer hooks. This hook will install the toolkit at a separate location to
+avoid any alterations to be made to the depencies and/or build system.
+Everything can be altered through your own extensions.
 
 > *Note:* You will be asked to remove or keep the VCS files after checking out
 > your project. For development purposes you should NOT agree to remove
