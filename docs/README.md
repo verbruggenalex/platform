@@ -7,8 +7,6 @@
 * [Build properties](#build-properties)
 
 ## Requirements
-
-
 <table><tr>
 <td width="100%">&nbsp;</td>
 <td><b><a href="#nexteuropa">Previous</a></b></td>
@@ -62,7 +60,6 @@ everything you need.
 </tr></tbody></table>
 
 ## Installation
-
 <table><tr>
 <td width="100%">&nbsp;</td>
 <td><b><a href="#nexteuropa">Top</a></b></td>
@@ -90,7 +87,6 @@ purposes you should NOT agree to remove these files. Only for purposes like
 deployments this can be useful.
 
 ## Build properties
-
 <table><tr>
 <td width="100%">&nbsp;</td>
 <td><b><a href="#nexteuropa">Top</a></b></td>
