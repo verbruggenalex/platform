@@ -12,7 +12,8 @@ presence which is more relevant, coherent and cost-effective. This
 composer project contains the Drupal profile which is used to
 build the projects.
 
-<details><summary><b>Table of contents</b></summary>
+## Table of contents
+<details><summary>Click to open the table of contents. <sup>(9)</sup></summary>
 
 * [Requirements](#requirements)
   * [Docker Only](#docker-only)
