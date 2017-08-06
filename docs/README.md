@@ -22,30 +22,28 @@ Or a mix of both.
 This requirement for docker only requires docker in docker support.
 The configuration to accomplish this is complicated and if implemented
 incorrectly can give you problems. We recommend this approach only
-for seasond docker users.
-
-*Required components*:
+for seasond docker users.<br>*Required components*:
 [Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)
 </details>
 <details><summary><b>Docker Plus</b></summary>
+
 Instead of having the absolute minimal requirement you can install the
 host level components Composer and Phing on the non-docker environment.
 Then this can spin up the docker containers for you without having to
-configure a complicated docker installation.
-
-*Required components*: [Composer](https://getcomposer.org/),
+configure a complicated docker installation.<br>*Required components*:
+[Composer](https://getcomposer.org/),
 [Phing](https://packagist.org/packages/phing/phing),
 [Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)
 </details>
 <details><summary><b>Docker Zero</b></summary>
+
 If you are not interested in the advantages that the starterkit can give
 you with the provided docker images you can keep a normal host only setup.
 But it is very much recommended to use docker as it will give you
-everything you need.
-
-*Required components*:
-[LAMP Stack](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7),
-[Composer](https://getcomposer.org/)</details>
+everything you need.<br>*Required components*:
+[Composer](https://getcomposer.org/),
+[LAMP Stack](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7)
+</details>
 
 ## Installation
 The build system for nexteuropa projects is packaged in a toolkit that can
@@ -78,8 +76,8 @@ documentation file for the system to work correctly. Any time you install the
 toolkit it will be copied to your repository root. Even though it is a template
 you should not remove this file, but commmit it to your repository. The reason
 for this is that it allows you to easily check the version of the toolkit and
-what new properties were introduced or deprecated.
-*Requirements*: Never alter, Always commit;
+what new properties were introduced or deprecated.<br>*Requirements*:
+Never alter, Always commit.
 </details>
 <details><summary><b>build.properties</b></summary>
 
@@ -88,9 +86,8 @@ NextEuropa projects. Without it your build system will fail with a build
 exception. It must contain a minimum set of properties, like project.id, etc.
 A list of required properties is still to be delivered. Aside from the
 required properties you can add any other properties that are project
-specific and do not contain any credentials.
-*Requirements*: Always commit, No credentials, No environments, Needed for
-builds.
+specific and do not contain any credentials. <br>*Requirements*: Always
+commit, No credentials, No environments, Needed for builds.
 </details>
 <details><summary><b>build.properties.local</b></summary>
 
@@ -100,7 +97,7 @@ username and password of the Drupal admin user so they can be used during the
 installation. Next to credentials you have many development settings that you
 can change to your liking. Because these settings are personal they should
 not be shared with the rest of the team. Make sure you never commit this file.
-*Requirements*: Never commit.
+<br>*Requirements*: Never commit.
 </details>
 
 ## Listing the available build commands
