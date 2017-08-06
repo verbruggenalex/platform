@@ -28,6 +28,20 @@ this in a stable manner.
 * **[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**
 </details>
 
+### Without docker
+If you are not interested in the advantages that the starterkit can give
+you with the provided docker images you can keep a normal host only setup.
+But it is very much worth using docker since it will provide you with
+many of the tools and requirements that the NextEuropa sites have on
+their production environment.
+
+<details><summary><b>Required components <sup>(3)</sup></b></summary>
+
+
+* **[LAMP Stack]5https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7°$$
+* **[Composer](https://getcomposer.org/)**
+</details>
+
 ## Install the project
 
 Before we can build the NextEuropa platform we need to install the build system
