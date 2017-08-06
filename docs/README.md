@@ -3,16 +3,16 @@
 # NextEuropa
 
 * [Requirements](#requirements)
+* [Installation](#installation)
 * [Build properties](#build-properties)
 
 ## Requirements
 
 
 <table><tr>
-  <td> [Previous](#nexteuropa) </td>
-  <td> [Top](#nexteuropa) </td>
-  <td width="100%"></td>
-  <td> [Next](#installation) </td>
+<td width="100%">&nbsp;</td>
+<td><b><a href="#nexteuropa">Previous</a></b></td>
+<td><b><a href="#installation">Next</a></b></td>
 </tr></table>
 
 <table><tbody align="left" valign="top"><tr>
@@ -29,7 +29,7 @@ for seasond docker users.
 </details>
 
   </td>
-  <td width="33%">
+  <td width="100%">
 
 ### 2. Docker Plus
 Instead of having the absolute minimal requirement you can install the
@@ -63,6 +63,13 @@ everything you need.
 
 ## Installation
 
+<table><tr>
+<td width="100%">&nbsp;</td>
+<td><b><a href="#nexteuropa">Top</a></b></td>
+<td><b><a href="#requirements">Previous</a></b></td>
+<td><b><a href="#build-properties">Next</a></b></td>
+</tr></table>
+
 The build system for nexteuropa projects is packaged in a toolkit that can
 be found here: [ec-europa/ssk](https://github.com/ec-europa/ssk). This is
 the only required composer package to set up your project. If your project
@@ -83,6 +90,12 @@ purposes you should NOT agree to remove these files. Only for purposes like
 deployments this can be useful.
 
 ## Build properties
+
+<table><tr>
+<td width="100%">&nbsp;</td>
+<td><b><a href="#nexteuropa">Top</a></b></td>
+<td><b><a href="#installation">Previous</a></b></td>
+</tr></table>
 
 <table><tbody align="left" valign="top"><tr>
   <td width="33%">
