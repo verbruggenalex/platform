@@ -4,13 +4,12 @@ Shields to consider: https://shields.io/
 Note: This documentation is in progress and should not be relied on. The project is in full development.
 
 # NextEuropa
-The Next EUROPA IT Platform is the technical side of the digital
-transformation programme at the Commission. The aim is to give the
-Commission the modern platform it needs to make the most of new
-digital trends. And to help the organisation build a public web
-presence which is more relevant, coherent and cost-effective. This
-composer project contains the Drupal profile which is used to
-build the projects.
+<img align="left" width="50%" src="https://ec.europa.eu/info/sites/info/themes/europa/images/svg/logo/logo--en.svg" />
+
+<p>The Next EUROPA IT Platform is the technical side of the digital
+transformation programme at the Commission. This composer project
+contains the Drupal profiles that are used to build the projects. It
+also containse tools for Quality Assurance.</p>
 
 ## Requirements
 There are three separate ways of using the NextEuropa project. Either
