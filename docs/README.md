@@ -1,6 +1,15 @@
-[![Build Status](https://status.continuousphp.com/git-hub/ec-europa/platform-dev?token=4df2e996-5362-486e-b409-84527de6a65b&branch=develop)](https://continuousphp.com/git-hub/ec-europa/platform-dev)
+[![Latest Stable Version](https://poser.pugx.org/drush/drush/v/stable.png)](https://packagist.org/packages/drush/drush) [![Total Downloads](https://poser.pugx.org/drush/drush/downloads.png)](https://packagist.org/packages/drush/drush) [![Latest Unstable Version](https://poser.pugx.org/drush/drush/v/unstable.png)](https://packagist.org/packages/drush/drush) [![License](https://poser.pugx.org/drush/drush/license.png)](https://packagist.org/packages/drush/drush) [![Documentation Status](https://readthedocs.org/projects/drush/badge/?version=master)](https://readthedocs.org/projects/drush/?badge=master)
+
+Note: This documentation is in progress and should not be relied on. The project is in full development.
 
 # NextEuropa
+The Next EUROPA IT Platform is the technical side of the digital
+transformation programme at the Commission. The aim is to give the
+Commission the modern platform it needs to make the most of new
+digital trends. And to help the organisation build a public web
+presence which is more relevant, coherent and cost-effective. This
+composer project contains the Drupal profile which is used to
+build the projects.
 
 * [Requirements](#requirements)
 * [Installation](#installation)
