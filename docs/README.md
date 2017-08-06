@@ -35,8 +35,8 @@ installed separately because changing files on this system might break the build
 system.
 
 > *Note:* You will be asked to remove or keep the VCS files after checking out
-> your project. For development purposes you should NOT remove agree to remove
-> these files. Only for deployment purposes this can be useful.
+> your project. For development purposes you should NOT agree to remove
+> these files. Only for purposes like deployments this can be useful.
 
 ## Customize build properties
 
