@@ -28,7 +28,7 @@ This requirement for docker only requires docker in docker support.
 The configuration to accomplish this is complicated and if implemented
 incorrectly can give you problems. We recommend this approach only
 for seasond docker users.
-<details><summary><b>Required components <sup>(1)</sup></b></summary>
+<details open><summary><b>Required components <sup>(1)</sup></b></summary>
 
 * **[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**
 </details>
@@ -38,7 +38,7 @@ Instead of having the absolute minimal requirement you can install the
 host level components Composer and Phing on the non-docker environment.
 Then this can spin up the docker containers for you without having to
 configure a complicated docker installation.
-<details><summary><b>Required components <sup>(3)</sup></b></summary>
+<details open><summary><b>Required components <sup>(3)</sup></b></summary>
 
 * **[Composer](https://getcomposer.org/)**
 * **[Phing](https://packagist.org/packages/phing/phing)**
@@ -50,7 +50,7 @@ If you are not interested in the advantages that the starterkit can give
 you with the provided docker images you can keep a normal host only setup.
 But it is very much recommended to use docker as it will give you
 everything you need.
-<details><summary><b>Required components <sup>(2)</sup></b></summary>
+<details open><summary><b>Required components <sup>(2)</sup></b></summary>
 
 
 * **[LAMP Stack](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7)**
@@ -98,7 +98,7 @@ toolkit it will be copied to your repository root. Even though it is a template
 you should not remove this file, but commmit it to your repository. The reason
 for this is that it allows you to easily check the version of the toolkit and
 what new properties were introduced or deprecated.
-<details><summary><b>Requirements <sup>(2)</sup></b></summary>
+<details open><summary><b>Requirements <sup>(2)</sup></b></summary>
 
 * **Never alter**
 * **Always commit**
@@ -112,7 +112,7 @@ exception. It must contain a minimum set of properties, like project.id, etc.
 A list of required properties is still to be delivered. Aside from the
 required properties you can add any other properties that are project
 specific and do not contain any credentials.
-<details><summary><b>Requirements <sup>(4)</sup></b></summary>
+<details open><summary><b>Requirements <sup>(4)</sup></b></summary>
 
 * **Always commit**
 * **No credentials**
@@ -128,7 +128,7 @@ username and password of the Drupal admin user so they can be used during the
 installation. Next to credentials you have many development settings that you
 can change to your liking. Because these settings are personal they should
 not be shared with the rest of the team. Make sure you never commit this file.
-<details><summary><b>Requirements <sup>(1)</sup></b></summary>
+<details open><summary><b>Requirements <sup>(1)</sup></b></summary>
 
 * **Never commit**
 </details>
