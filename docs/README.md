@@ -29,7 +29,7 @@ for seasond docker users.
 </details>
 
   </td>
-  <td width="100%">
+  <td width="33%">
 
 ### 2. Docker Plus
 Instead of having the absolute minimal requirement you can install the
@@ -44,7 +44,7 @@ configure a complicated docker installation.
 </details>
 
   </td>
-  <td width="33%">
+  <td width="34%">
 
 ### 3. Docker Zero
 If you are not interested in the advantages that the starterkit can give
