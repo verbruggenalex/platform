@@ -50,7 +50,7 @@ everything you need.
   </td>
 </tr></tbody></table>
 
-## Install the project
+## Installation
 
 The build system for nexteuropa projects is packaged in a toolkit that can
 be found here: [ec-europa/ssk](https://github.com/ec-europa/ssk). This is
@@ -65,52 +65,61 @@ $ composer create-project verbruggenalex/platform foldername dev-master
 This command will clone the repository and run composer install on the project.
 That command will itself call another composer install by the usage of the
 composer hooks. This hook will install the toolkit at a separate location to
-avoid any alterations to be made to the depencies and/or build system.
+avoid any alterations to be made to the dependencies and/or build system.
 Everything can be altered through your own extensions.
 
 > *Note:* You will be asked to remove or keep the VCS files after checking out
 > your project. For development purposes you should NOT agree to remove
 > these files. Only for purposes like deployments this can be useful.
 
-## Customize build properties
+## Build properties
 
-Create a new file in the root of the project named `build.properties.local`
-using your favourite text editor:
+### 1. build.properties.dist
 
-```
-$ vim build.properties.local
-```
+<details><summary>The template file provided by the toolkit. <sup><a>(more)</a><sup></summary>
+
+This properties file contains the default settings and acts as a loading and
+documentation file for the system to work correctly. Any time you install the
+toolkit it will be copied to your repository root. Even though it is a template
+you should not remove this file, but commmit it to your repository. The reason
+for this is that it allows you to easily check the version of the toolkit and
+what new properties were introduced or deprecated.
+</summary></details>
+
+* Never alter this file
+* Always commit this file
+
+### 2. build.properties.project
+
+<details><summary>The project file that contains all needed information to build. <sup><a>(more)</a><sup></summary>
+
+Always commit this file to your repository. This file is required for all
+NextEuropa projects. Without it your build system will fail with a build
+exception. It must contain a minimum set of properties, like project.id, etc.
+A list of required properties is still to be delivered. Aside from the
+required properties you can add any other properties that are project
+specific and do not contain any credentials. Any development environment
+specific properties need to be defined in the file below.
+</summary></details>
+
+* Required to build the project
+* Always commit this file
+* Never store credentials
+* Never store environment specific
+
+### 3 build.properties.local
+
+<details><summary>The development file that you can play around with. <sup><a>(more)</a><sup></summary>
 
 This file will contain configuration which is unique to your development
-machine. This is mainly useful for specifying your database credentials and the
+environment. It is useful for specifying your database credentials and the
 username and password of the Drupal admin user so they can be used during the
-installation.
+installation. Next to credentials you have many development settings that you
+can change to your liking. Because these settings are personal they should
+not be shared with the rest of the team. Make sure you never commit this file.
+</summary></details>
 
-Because these settings are personal they should not be shared with the rest of
-the team. Make sure you never commit this file!
-
-All options you can use can be found in the `build.properties.dist` file. Just
-copy the lines you want to override and change their values. For example:
-
-```
-# The location of the Composer binary.
-composer.bin = /usr/bin/composer
-
-# The install profile to use.
-platform.profile.name = multisite_drupal_standard
-
-# Database settings.
-drupal.db.name = my_database
-drupal.db.user = root
-drupal.db.password = hunter2
-
-# Admin user.
-drupal.admin.username = admin
-drupal.admin.password = admin
-
-# The base URL to use in Behat tests.
-behat.base_url = http://nexteuropa.local
-```
+* Never commit
 
 ## Listing the available build commands
 
