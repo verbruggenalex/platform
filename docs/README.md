@@ -4,23 +4,27 @@
 
 ## Requirements
 
+<table><tbody align="left" valign="top"><tr>
+  <td>
+  
 ### Docker Only
-This requirement for docker only needs to support docker in docker. This
-does require specific configuration and the behavior can very much
-difference between environments. Devops could be a help on  achieving
-this in a stable manner.
-
+This requirement for docker only requires docker in docker support.
+The configuration to accomplish this is complicated and if implemented
+incorrectly can give you problems. We recommend this approach only
+for seasond docker users.
 <details><summary><b>Required components <sup>(1)</sup></b></summary>
 
 * **[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**
 </details>
+
+  </td>
+  <td>
 
 ### Docker Plus
 Instead of having the absolute minimal requirement you can install the
 host level components Composer and Phing on the non-docker environment.
 Then this can spin up the docker containers for you without having to
 configure a complicated docker installation.
-
 <details><summary><b>Required components <sup>(3)</sup></b></summary>
 
 * **[Composer](https://getcomposer.org/)**
@@ -28,19 +32,23 @@ configure a complicated docker installation.
 * **[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**
 </details>
 
-### Without docker
+  </td>
+  <td>
+
+### Docker Zero
 If you are not interested in the advantages that the starterkit can give
 you with the provided docker images you can keep a normal host only setup.
-But it is very much worth using docker since it will provide you with
-many of the tools and requirements that the NextEuropa sites have on
-their production environment.
-
+But it is very much recommended to use docker as it will give you
+everything you need.
 <details><summary><b>Required components <sup>(2)</sup></b></summary>
 
 
 * **[LAMP Stack](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7°$$
 * **[Composer](https://getcomposer.org/)**
 </details>
+
+  </td>
+</tr></tbody></table>
 
 ## Install the project
 
