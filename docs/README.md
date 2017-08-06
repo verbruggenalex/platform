@@ -17,7 +17,7 @@ There are three separate ways of using the NextEuropa project. Either
 you use an environment with Docker installed, an environment without.
 Or a mix of both.
   
-<details><summary><b>Docker Only</b></summary>
+<details><summary><b>Docker Solo</b></summary>
 
 This requirement for docker only requires docker in docker support.
 The configuration to accomplish this is complicated and if implemented
