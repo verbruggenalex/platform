@@ -2,11 +2,19 @@
 
 # NextEuropa
 
-* [Requirements](#requirements)
+
 * [Installation](#installation)
 * [Build properties](#build-properties)
 
 ## Requirements
+
+
+<table><tr>
+  <td> [Previous](#nexteuropa) </td>
+  <td> [Top](#nexteuropa) </td>
+  <td width="100%"></td>
+  <td> [Next](#installation) </td>
+</tr></table>
 
 <table><tbody align="left" valign="top"><tr>
   <td width="33%">
