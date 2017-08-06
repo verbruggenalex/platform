@@ -85,8 +85,8 @@ for this is that it allows you to easily check the version of the toolkit and
 what new properties were introduced or deprecated.
 <details><summary><b>Requirements <sup>(2)</sup></b></summary>
 
-* **Never alter this file**
-* **Always commit this file**
+* **Never alter**
+* **Always commit**
 </details>
 
   </td>
@@ -102,10 +102,10 @@ required properties you can add any other properties that are project
 specific and do not contain any credentials.
 <details><summary><b>Requirements <sup>(4)</sup></b></summary>
 
-* **Required to build the project**
-* **Always commit this file**
-* **Never store credentials**
-* **Never store environment specific**
+* **Required for builds**
+* **Always commit**
+* **No credentials**
+* **No environments**
 </details>
 
   </td>
@@ -121,7 +121,7 @@ can change to your liking. Because these settings are personal they should
 not be shared with the rest of the team. Make sure you never commit this file.
 <details><summary><b>Requirements <sup>(1)</sup></b></summary>
 
-* Never commit
+* **Never commit**
 </details>
 
   </td>
