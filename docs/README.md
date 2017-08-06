@@ -14,7 +14,7 @@
 			docker installation.</p>
 			<b>Required components:</b>
 			<ul>
-				<li>composer</li>
+				<li>Composer</li>
 				<li>PHP Phar extension</li>
 				<li>Phing</li>
 				<li>Docker</li>
