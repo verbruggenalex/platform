@@ -123,9 +123,81 @@ specific and do not contain any credentials.
 ## Phing command list
 We keep the documentation light for this page because we are planning to
 move all documentation to the github wiki. For now please help yourself
-with the command listing target.
+with the command listing target. You can get a list of all the available
+Phing build commands ("targets") with a short description of each main
+target.
+
+Beware: the list below is under heavy development.
 
 <details><summary><b>./ssk/phing</b> or <b>./ssk/phing help</b></summary>
-You can get a list of all the available Phing build commands ("targets") with a
-short description of each target with the phing help command.
+
+```
+Main targets:
+-------------------------------------------------------------------------------
+ build-clean          Build local version of subsite with a clean install.
+ build-clone          Build local version of subsite with production data.
+ build-code           Build local version of subsite without install.
+ build-keep           Build local version of subsite with backup and restore.
+ build-release        Build subsite source code release package.
+ build-tests          Build subsite tests code release package.
+ docker-compose-down  Trash docker project.
+ docker-compose-stop  Stop docker project.
+ docker-compose-up    Start docker project.
+ help                 The default target used when no arguments have been given.
+ help_xml.help        The default target used when no arguments have been given.
+ link-docroot         Create symlink from build to docroot.
+ subsite-install      Install the subsite.
+ test-run-behat       Refresh configuration and run behat scenarios.
+ test-run-phpcs       Refresh configuration and run phpcs review.
+ test-run-qa          Refresh configuration and run qa review.
+
+Subtargets:
+-------------------------------------------------------------------------------
+ dist-composer-install
+ dist-copy-resources
+ dist-delete
+ dist-make
+ drush-create-files-dirs
+ drush-dl-rr
+ drush-enable-solr
+ drush-make-no-core
+ drush-rebuild-node-access
+ drush-regenerate-settings
+ drush-registry-rebuild
+ drush-site-install
+ drush-sql-create
+ drush-sql-drop
+ drush-sql-dump
+ drush-sql-import
+ platform-composer-install
+ platform-delete
+ platform-download
+ platform-link-resources
+ platform-make
+ platform-unpack
+ platform-update-htaccess
+ starterkit-build-docs
+ starterkit-copy-templates
+ starterkit-link-binary
+ starterkit-upgrade
+ subsite-composer-install
+ subsite-create-directories
+ subsite-database-download
+ subsite-database-import
+ subsite-database-wget
+ subsite-modules-devel-dl
+ subsite-modules-devel-en
+ subsite-modules-devel-mf
+ subsite-modules-install-en
+ subsite-setup-files-directory
+ subsite-site-backup
+ subsite-site-restore
+ test-behat-exec
+ test-behat-setup
+ test-behat-setup-link
+ test-phpcs-exec
+ test-phpcs-setup
+ test-phpcs-setup-prepush
+ test-qa-exec
+```
 </details>
