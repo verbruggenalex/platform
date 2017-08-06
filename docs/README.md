@@ -102,10 +102,10 @@ required properties you can add any other properties that are project
 specific and do not contain any credentials.
 <details><summary><b>Requirements <sup>(4)</sup></b></summary>
 
-* **Required for builds**
 * **Always commit**
 * **No credentials**
 * **No environments**
+* **Needed for builds**
 </details>
 
   </td>
