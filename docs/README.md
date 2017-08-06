@@ -2,6 +2,10 @@
 
 # NextEuropa
 
+* [Requirements](requirements)
+* [Installation](installation)
+* [Build properties](build-properties)
+
 ## Requirements
 
 <table><tbody align="left" valign="top"><tr>
