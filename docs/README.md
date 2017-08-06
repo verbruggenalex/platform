@@ -13,6 +13,9 @@ composer project contains the Drupal profile which is used to
 build the projects.
 
 ## Requirements
+There are three separate ways of using the NextEuropa project. Either
+you use an environment with Docker installed, an environment without.
+Or a mix of both.
   
 <details><summary><b>Docker Only</b></summary>
 
@@ -47,16 +50,13 @@ everything you need.
 </details>
 
 ## Installation
-
 The build system for nexteuropa projects is packaged in a toolkit that can
 be found here: [ec-europa/ssk](https://github.com/ec-europa/ssk). This is
 the only required composer package to set up your project. If your project
 is registered as a package as well you can use the composer create-project
 command to complete installation in one single command:
 
-```
-$ composer create-project verbruggenalex/platform foldername dev-master
-```
+<details><summary><b>composer create-project verbruggenalex/platform foldername dev-master</b></summary>
 
 This command will clone the repository and run composer install on the project.
 That command will itself call another composer install by the usage of the
@@ -66,8 +66,12 @@ Everything can be altered through your own extensions. You will be asked to
 remove or keep the VCS files after checking out your project. For development
 purposes you should NOT agree to remove these files. Only for purposes like
 deployments this can be useful.
+</details>
 
 ## Build properties
+There are 3 different sets of build properties file that you can use. If you
+are unfamiliar with the purpose behind each different type of properties file
+please open the descriptions and read what they are designed for.
   
 <details><summary><b>build.properties.dist</b></summary>
 
@@ -82,7 +86,7 @@ what new properties were introduced or deprecated.
   * Always commit
 </details>
 
-<details><summary><b>build.properties.project</b></summary>
+<details><summary><b>build.properties</b></summary>
 
 Always commit this file to your repository. This file is required for all
 NextEuropa projects. Without it your build system will fail with a build
