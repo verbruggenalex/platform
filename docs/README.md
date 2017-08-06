@@ -6,30 +6,32 @@
 <big><table>
   <tbody><tr align="left" valign="top">
 		<td width=50%">
-			<b>Easy</b>
+			<b>Docker Plus</b>
 			<p>Instead of having the absolute minimal requirement you can
 			install the host level components Composer and Phing on the
 			non-docker environment. Then this can spin up the docker 
 			containers for you without having to configure a complicated 
 			docker installation.</p>
-			<b>Required components:</b>
-			<ul>
-				<li>Composer</li>
-				<li>PHP Phar extension</li>
-				<li>Phing</li>
-				<li>Docker</li>
-			</ul>
+			<details><summary>Required components <sup><b>(4)</b></sup></summary>
+				<ul>
+					<li>Composer</li>
+					<li>PHP Phar extension</li>
+					<li>Phing</li>
+					<li>Docker</li>
+				</ul>
+			</summary></details>
 		</td>
 		<td width="50">
-			<b>Expert</b>
+			<b>Docker Only</b>
 			<p>This requirement for docker only needs to support docker in docker. 
 			This doesrequire specific configuration and the behavior can very 
 			much difference between environments. Devops could be a help on 
 			achieving this in a stable manner.</p>
-			<b>Required components:</b>
-			<ul>
-				<li>Docker</li>
-			</ul>
+			<details><summary>Required components <sup><b>(1)</b></sup></summary>
+				<ul>
+					<li>Docker</li>
+				</ul>
+			</summary></details>
 		</td>
 	</tr></tbody>
 </table>
