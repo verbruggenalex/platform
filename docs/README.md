@@ -11,11 +11,11 @@
 		containers for you without having to configure a complicated 
 		docker installation.
 		</p>
-		<details><summary>Required components <sup><b>(4)</b></sup></summary>
+		<details><summary><b>Required components <sup>(3)</sup></b></summary>
 			<ul>
-				<li>[Composer](https://getcomposer.org/)</li>
-				<li>[Phing](https://packagist.org/packages/phing/phing)</li>
-				<li>[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)</li>
+				<li>**[Composer](https://getcomposer.org/)**</li>
+				<li>**[Phing](https://packagist.org/packages/phing/phing)**</li>
+				<li>**[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**</li>
 			</ul>
 		</summary></details>
 	</td>
@@ -25,9 +25,9 @@
 		This does require specific configuration and the behavior can very 
 		much difference between environments. Devops could be a help on 
 		achieving this in a stable manner.</p>
-		<details><summary>Required components <sup><b>(1)</b></sup></summary>
+		<details><summary><b>Required components <sup>(1)</sup></b></summary>
 			<ul>
-				<li>[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)</li>
+				<li>**[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**</li>
 			</ul>
 		</summary></details>
 	</td>
