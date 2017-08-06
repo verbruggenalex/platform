@@ -12,6 +12,8 @@ presence which is more relevant, coherent and cost-effective. This
 composer project contains the Drupal profile which is used to
 build the projects.
 
+<details><summary><b>Table of contents</b></summary>
+
 * [Requirements](#requirements)
   * [Docker Only](#docker-only)
   * [Docker Plus](#docker-plus)
@@ -21,6 +23,7 @@ build the projects.
   * [build.properties.dist](#buildpropertiesdist)
   * [build.properties.project](#buildpropertiesproject)
   * [build.properties.local](#buildpropertieslocal)
+</details>
 
 ## Requirements
 <table><tr>
