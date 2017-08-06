@@ -110,7 +110,7 @@ what new properties were introduced or deprecated.
     <code>needed for builds</code>
   </sup>
 -->
-</summary>
+</summary></details>
 
 Always commit this file to your repository. This file is required for all
 NextEuropa projects. Without it your build system will fail with a build
@@ -122,9 +122,7 @@ specific and do not contain any credentials.
 
 ## Listing the available build commands
 
+<details><summary><b>./ssk/phing</b> or <b>./ssk/phing help</b></summary>
 You can get a list of all the available Phing build commands ("targets") with a
-short description of each target with the following command:
-
-```
-$ ./bin/phing
-```
+short description of each target with the phing help command.
+</details>
