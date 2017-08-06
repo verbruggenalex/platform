@@ -5,12 +5,13 @@
 ## Requirements
 <big><table>
   <tbody><tr align="left" valign="top">
-		<td>
+		<td width=50%">
 			<b>Easy</b>
-			<p>Instead of having the lowest requirement. Also put Composer and 
-			Phing on the host environment. Then this can spin up your docker 
-			environments for you without having to configure a complicated 
-			docker system.</p>
+			<p>Instead of having the absolute minimal requirement you can
+			install the host level components Composer and Phing on the
+			non-docker environment. Then this can spin up the docker 
+			containers for you without having to configure a complicated 
+			docker installation.</p>
 			<b>Required components:</b>
 			<ul>
 				<li>composer</li>
@@ -19,7 +20,7 @@
 				<li>Docker</li>
 			</ul>
 		</td>
-		<td>
+		<td width="50">
 			<b>Expert</b>
 			<p>This requirement for docker only needs to support docker in docker. 
 			This doesrequire specific configuration and the behavior can very 
