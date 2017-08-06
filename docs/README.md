@@ -3,35 +3,30 @@
 # NextEuropa
 
 ## Requirements
-<big><table><tbody><tr align="left" valign="top">
-	<td width="50%"><h3>Docker Plus</h3>
-		<p>Instead of having the absolute minimal requirement you can
-		install the host level components Composer and Phing on the
-		non-docker environment. Then this can spin up the docker 
-		containers for you without having to configure a complicated 
-		docker installation.
-		</p>
-		<details><summary><b>Required components <sup>(3)</sup></b></summary>
-			<ul>
-				<li>**[Composer](https://getcomposer.org/)**</li>
-				<li>**[Phing](https://packagist.org/packages/phing/phing)**</li>
-				<li>**[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**</li>
-			</ul>
-		</summary></details>
-	</td>
-	<td width="50">
-		<h3>Docker Only</h3>
-		<p>This requirement for docker only needs to support docker in docker. 
-		This does require specific configuration and the behavior can very 
-		much difference between environments. Devops could be a help on 
-		achieving this in a stable manner.</p>
-		<details><summary><b>Required components <sup>(1)</sup></b></summary>
-			<ul>
-				<li>**[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**</li>
-			</ul>
-		</summary></details>
-	</td>
-</tr></tbody></table>
+
+### Docker Plus
+Instead of having the absolute minimal requirement you can install the
+host level components Composer and Phing on the non-docker environment.
+Then this can spin up the docker containers for you without having to
+configure a complicated docker installation.
+
+<details><summary><b>Required components <sup>(3)</sup></b></summary>
+
+* **[Composer](https://getcomposer.org/)**
+* **[Phing](https://packagist.org/packages/phing/phing)**
+* **[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**
+</details>
+
+### Docker Only
+This requirement for docker only needs to support docker in docker. This
+does require specific configuration and the behavior can very much
+difference between environments. Devops could be a help on  achieving
+this in a stable manner.
+
+<details><summary><b>Required components <sup>(1)</sup></b></summary>
+
+* **[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**
+</details>
 
 ## Install the project
 
