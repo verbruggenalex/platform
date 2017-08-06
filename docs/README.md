@@ -69,27 +69,25 @@ There are 3 different sets of build properties file that you can use. If you
 are unfamiliar with the purpose behind each different type of properties file
 please open the descriptions and read what they are designed for.
   
-<details><summary><b>build.properties.dist</b></summary>
+  <details><summary><b>build.properties.dist</b> <sup><code>never alter</code> <code>always commit</code></sup></summary>
 
 This properties file contains the default settings and acts as a loading and
 documentation file for the system to work correctly. Any time you install the
 toolkit it will be copied to your repository root. Even though it is a template
 you should not remove this file, but commmit it to your repository. The reason
 for this is that it allows you to easily check the version of the toolkit and
-what new properties were introduced or deprecated.<br>*Requirements*:
-Never alter, Always commit.
+what new properties were introduced or deprecated.
 </details>
-<details><summary><b>build.properties</b></summary>
+<details><summary><b>build.properties</b> <sup><code>always commit</code> <code>no credentials</code> <code>no environments</code> <code>needed for builds</code></sup></summary>
 
 Always commit this file to your repository. This file is required for all
 NextEuropa projects. Without it your build system will fail with a build
 exception. It must contain a minimum set of properties, like project.id, etc.
 A list of required properties is still to be delivered. Aside from the
 required properties you can add any other properties that are project
-specific and do not contain any credentials. <br>*Requirements*: Always
-commit, No credentials, No environments, Needed for builds.
+specific and do not contain any credentials.
 </details>
-<details><summary><b>build.properties.local</b></summary>
+<details><summary><b>build.properties.local</b> <sup><code>never commit</code></sup></summary></summary>
 
 This file will contain configuration which is unique to your development
 environment. It is useful for specifying your database credentials and the
@@ -97,7 +95,6 @@ username and password of the Drupal admin user so they can be used during the
 installation. Next to credentials you have many development settings that you
 can change to your liking. Because these settings are personal they should
 not be shared with the rest of the team. Make sure you never commit this file.
-<br>*Requirements*: Never commit.
 </details>
 
 ## Listing the available build commands
