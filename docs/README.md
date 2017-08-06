@@ -66,17 +66,16 @@ This command will clone the repository and run composer install on the project.
 That command will itself call another composer install by the usage of the
 composer hooks. This hook will install the toolkit at a separate location to
 avoid any alterations to be made to the dependencies and/or build system.
-Everything can be altered through your own extensions.
-
-> *Note:* You will be asked to remove or keep the VCS files after checking out
-> your project. For development purposes you should NOT agree to remove
-> these files. Only for purposes like deployments this can be useful.
+Everything can be altered through your own extensions. You will be asked to
+remove or keep the VCS files after checking out your project. For development
+purposes you should NOT agree to remove these files. Only for purposes like
+deployments this can be useful.
 
 ## Build properties
 
 ### 1. build.properties.dist
 
-<details><summary>The template file provided by the toolkit. <sup><a>(more)</a><sup></summary>
+<details><p><summary>The template file provided by the toolkit. <sup><a name="more">(more)</a><sup></summary></p>
 
 This properties file contains the default settings and acts as a loading and
 documentation file for the system to work correctly. Any time you install the
@@ -91,7 +90,7 @@ what new properties were introduced or deprecated.
 
 ### 2. build.properties.project
 
-<details><summary>The project file that contains all needed information to build. <sup><a>(more)</a><sup></summary>
+<details><p><summary>The project file that contains all needed information to build. <sup><a name="more">(more)</a><sup></summary></p>
 
 Always commit this file to your repository. This file is required for all
 NextEuropa projects. Without it your build system will fail with a build
@@ -109,7 +108,7 @@ specific properties need to be defined in the file below.
 
 ### 3 build.properties.local
 
-<details><summary>The development file that you can play around with. <sup><a>(more)</a><sup></summary>
+<details><p><summary>The development file that you can play around with. <sup><a name="more">(more)</a><sup></summary></p>
 
 This file will contain configuration which is unique to your development
 environment. It is useful for specifying your database credentials and the
