@@ -13,10 +13,9 @@
 		</p>
 		<details><summary>Required components <sup><b>(4)</b></sup></summary>
 			<ul>
-				<li>Composer</li>
-				<li>PHP Phar extension</li>
-				<li>Phing</li>
-				<li>Docker</li>
+				<li>[Composer](https://getcomposer.org/)</li>
+				<li>[Phing](https://packagist.org/packages/phing/phing)</li>
+				<li>[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)</li>
 			</ul>
 		</summary></details>
 	</td>
@@ -28,7 +27,7 @@
 		achieving this in a stable manner.</p>
 		<details><summary>Required components <sup><b>(1)</b></sup></summary>
 			<ul>
-				<li>Docker</li>
+				<li>[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)</li>
 			</ul>
 		</summary></details>
 	</td>
