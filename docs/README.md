@@ -12,26 +12,7 @@ presence which is more relevant, coherent and cost-effective. This
 composer project contains the Drupal profile which is used to
 build the projects.
 
-## Table of contents
-<details><summary>Click to open the table of contents. <sup>(9)</sup></summary>
-
-* [Requirements](#requirements)
-  * [Docker Only](#docker-only)
-  * [Docker Plus](#docker-plus)
-  * [Docker Zero](#docker-zero)
-* [Installation](#installation)
-* [Build properties](#build-properties)
-  * [build.properties.dist](#buildpropertiesdist)
-  * [build.properties.project](#buildpropertiesproject)
-  * [build.properties.local](#buildpropertieslocal)
-</details>
-
 ## Requirements
-<table><tr>
-<td width="100%">&nbsp;</td>
-<td><b><a href="#nexteuropa">Previous</a></b></td>
-<td><b><a href="#installation">Next</a></b></td>
-</tr></table>
   
 ### Docker Only
 This requirement for docker only requires docker in docker support.
@@ -68,12 +49,6 @@ everything you need.
 </details>
 
 ## Installation
-<table><tr>
-<td width="100%">&nbsp;</td>
-<td><b><a href="#nexteuropa">Top</a></b></td>
-<td><b><a href="#requirements">Previous</a></b></td>
-<td><b><a href="#build-properties">Next</a></b></td>
-</tr></table>
 
 The build system for nexteuropa projects is packaged in a toolkit that can
 be found here: [ec-europa/ssk](https://github.com/ec-europa/ssk). This is
@@ -95,11 +70,6 @@ purposes you should NOT agree to remove these files. Only for purposes like
 deployments this can be useful.
 
 ## Build properties
-<table><tr>
-<td width="100%">&nbsp;</td>
-<td><b><a href="#nexteuropa">Top</a></b></td>
-<td><b><a href="#installation">Previous</a></b></td>
-</tr></table>
   
 ### build.properties.dist
 This properties file contains the default settings and acts as a loading and
