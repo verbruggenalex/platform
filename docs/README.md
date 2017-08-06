@@ -4,18 +4,39 @@
 
 ## Requirements
 
+### Difficult
+This requirement for docker only needs to support docker in docker. This does
+require specific configuration and the behavior can very much difference in
+between environments. Devops could be a help on achieving this.
+* Docker
+
+### Easy
+Instead of having the lowest requirement. Also put Composer and Phing on the
+host environment. Then this can spin up your docker environments for you
+without having to configure a complicated docker system.
 * Composer
 * PHP Phar extension
-* PhantomJS (in order to run JavaScript during Behat tests)
+* Phing
+* Docker
 
-## Install build system
+## Install the project
 
 Before we can build the NextEuropa platform we need to install the build system
 itself. This can be done using [composer](https://getcomposer.org/):
 
 ```
-$ composer install
+$ composer create-project verbruggenalex/platform foldername dev-master
 ```
+
+This command will clone this repository and run composer install on the project.
+The "composer install" command will itself call another composer install to the
+ec-europa/ssk package that contains the build system. This package is being
+installed separately because changing files on this system might break the build
+system.
+
+> *Note:* You will be asked to remove or keep the VCS files after checking out
+> your project. For development purposes you should NOT remove agree to remove
+> these files. Only for deployment purposes this can be useful.
 
 ## Customize build properties
 
