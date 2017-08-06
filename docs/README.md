@@ -83,8 +83,7 @@ installation. Next to credentials you have many development settings that you
 can change to your liking. Because these settings are personal they should
 not be shared with the rest of the team. Make sure you never commit this file.
 </details>
-<details><summary>
-    <b>build.properties.dist</b><br>
+<details><summary><b>build.properties.dist</b><br>
 <!-- Keepit simple for now
     <sup>
       <code>never alter</code> 
