@@ -2,9 +2,9 @@
 
 # NextEuropa
 
-* [Requirements](requirements)
-* [Installation](installation)
-* [Build properties](build-properties)
+* [Requirements](#requirements)
+* [Installation](#installation)
+* [Build properties](#build-properties)
 
 ## Requirements
 
