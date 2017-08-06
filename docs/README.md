@@ -13,8 +13,14 @@ composer project contains the Drupal profile which is used to
 build the projects.
 
 * [Requirements](#requirements)
+  * [Docker Only](#docker-only)
+  * [Docker Plus](#docker-plus)
+  * [Docker Zero](#docker-zero)
 * [Installation](#installation)
 * [Build properties](#build-properties)
+  * [build.properties.dist](#buildpropertiesdist)
+  * [build.properties.project](#buildpropertiesproject)
+  * [build.properties.local](#buildpropertieslocal)
 
 ## Requirements
 <table><tr>
@@ -23,7 +29,7 @@ build the projects.
 <td><b><a href="#installation">Next</a></b></td>
 </tr></table>
   
-### 1. Docker Only
+### Docker Only
 This requirement for docker only requires docker in docker support.
 The configuration to accomplish this is complicated and if implemented
 incorrectly can give you problems. We recommend this approach only
@@ -33,7 +39,7 @@ for seasond docker users.
 * **[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**
 </details>
 
-### 2. Docker Plus
+### Docker Plus
 Instead of having the absolute minimal requirement you can install the
 host level components Composer and Phing on the non-docker environment.
 Then this can spin up the docker containers for you without having to
@@ -45,7 +51,7 @@ configure a complicated docker installation.
 * **[Docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)**
 </details>
 
-### 3. Docker Zero
+### Docker Zero
 If you are not interested in the advantages that the starterkit can give
 you with the provided docker images you can keep a normal host only setup.
 But it is very much recommended to use docker as it will give you
@@ -91,7 +97,7 @@ deployments this can be useful.
 <td><b><a href="#installation">Previous</a></b></td>
 </tr></table>
   
-### 1. build.properties.dist
+### build.properties.dist
 This properties file contains the default settings and acts as a loading and
 documentation file for the system to work correctly. Any time you install the
 toolkit it will be copied to your repository root. Even though it is a template
@@ -104,7 +110,7 @@ what new properties were introduced or deprecated.
 * **Always commit**
 </details>
 
-### 2. build.properties.project
+### build.properties.project
 
 Always commit this file to your repository. This file is required for all
 NextEuropa projects. Without it your build system will fail with a build
@@ -120,7 +126,7 @@ specific and do not contain any credentials.
 * **Needed for builds**
 </details>
 
-### 3 build.properties.local
+### build.properties.local
 
 This file will contain configuration which is unique to your development
 environment. It is useful for specifying your database credentials and the
