@@ -51,7 +51,10 @@ the only required composer package to set up your project. If your project
 is registered as a package as well you can use the composer create-project
 command to complete installation in one single command:
 
-<details><summary><b>composer create-project verbruggenalex/platform foldername dev-master</b></summary>
+<details><summary><b>composer create-project \ <sup>(command)</sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verbruggenalex/platform \ <sup>(project package)</sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foldername \<sup> (install directory)</sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dev-master <sup>(project version)</sup></b></summary>
 
 This command will clone the repository and run composer install on the project.
 That command will itself call another composer install by the usage of the
