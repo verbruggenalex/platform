@@ -3,21 +3,38 @@
 # NextEuropa
 
 ## Requirements
-
-### Difficult
-This requirement for docker only needs to support docker in docker. This does
-require specific configuration and the behavior can very much difference in
-between environments. Devops could be a help on achieving this.
-* Docker
-
-### Easy
-Instead of having the lowest requirement. Also put Composer and Phing on the
-host environment. Then this can spin up your docker environments for you
-without having to configure a complicated docker system.
-* Composer
-* PHP Phar extension
-* Phing
-* Docker
+<big><table>
+	<thead align="left" valign="top">
+      <tr><th>Expert</th><th>Easy</th></tr>
+  </thead>
+  <tbody align="left" valign="top">
+    <tr>
+      <td>
+        <p>This requirement for docker only needs to support docker in docker. 
+        This doesrequire specific configuration and the behavior can very 
+        much difference between environments. Devops could be a help on 
+        achieving this in a stable manner.</p>
+        <b>Required components:</b>
+        <ul>
+          <li>Docker</li>
+        </ul>
+      </td>
+      <td>
+        <p>Instead of having the lowest requirement. Also put Composer and 
+        Phing on the host environment. Then this can spin up your docker 
+        environments for you without having to configure a complicated 
+        docker system.</p>
+        <u>Required components:</u>
+        <ul>
+          <li>composer</li>
+          <li>PHP Phar extension</li>
+          <li>Phing</li>
+          <li>Docker</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Install the project
 
