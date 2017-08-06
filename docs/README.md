@@ -3,38 +3,36 @@
 # NextEuropa
 
 ## Requirements
-<big><table>
-  <tbody><tr align="left" valign="top">
-		<td width=50%">
-			<b>Docker Plus</b>
-			<p>Instead of having the absolute minimal requirement you can
-			install the host level components Composer and Phing on the
-			non-docker environment. Then this can spin up the docker 
-			containers for you without having to configure a complicated 
-			docker installation.</p>
-			<details><summary>Required components <sup><b>(4)</b></sup></summary>
-				<ul>
-					<li>Composer</li>
-					<li>PHP Phar extension</li>
-					<li>Phing</li>
-					<li>Docker</li>
-				</ul>
-			</summary></details>
-		</td>
-		<td width="50">
-			<b>Docker Only</b>
-			<p>This requirement for docker only needs to support docker in docker. 
-			This doesrequire specific configuration and the behavior can very 
-			much difference between environments. Devops could be a help on 
-			achieving this in a stable manner.</p>
-			<details><summary>Required components <sup><b>(1)</b></sup></summary>
-				<ul>
-					<li>Docker</li>
-				</ul>
-			</summary></details>
-		</td>
-	</tr></tbody>
-</table>
+<big><table><tbody><tr align="left" valign="top">
+	<td width="50%"><h3>Docker Plus</h3>
+		<p>Instead of having the absolute minimal requirement you can
+		install the host level components Composer and Phing on the
+		non-docker environment. Then this can spin up the docker 
+		containers for you without having to configure a complicated 
+		docker installation.
+		</p>
+		<details><summary>Required components <sup><b>(4)</b></sup></summary>
+			<ul>
+				<li>Composer</li>
+				<li>PHP Phar extension</li>
+				<li>Phing</li>
+				<li>Docker</li>
+			</ul>
+		</summary></details>
+	</td>
+	<td width="50">
+		<h3>Docker Only</h3>
+		<p>This requirement for docker only needs to support docker in docker. 
+		This does require specific configuration and the behavior can very 
+		much difference between environments. Devops could be a help on 
+		achieving this in a stable manner.</p>
+		<details><summary>Required components <sup><b>(1)</b></sup></summary>
+			<ul>
+				<li>Docker</li>
+			</ul>
+		</summary></details>
+	</td>
+</tr></tbody></table>
 
 ## Install the project
 
