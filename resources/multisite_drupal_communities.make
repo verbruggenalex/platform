@@ -1,3 +1,11 @@
+api = 2
+core = 7.x
+
+; ===========
+; Drupal core
+; ===========
+
+includes[] = "drupal-core.make"
 includes[] = "multisite_drupal_standard.make"
 
 projects[og-delete][download][revision] = "c759e354d89b7ec280836047569acc75843eed38"
