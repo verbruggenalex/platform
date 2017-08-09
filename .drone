@@ -17,5 +17,3 @@ pipeline:
     image: fpfis/php56-dev
     commands:
       - ./bin/phing build-dist -Dcomposer.bin=$(which composer) -logger phing.listener.AnsiColorLogger
-
-# Commit
