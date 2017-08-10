@@ -1,0 +1,47 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "0c87dde1562d79eb751010e9eb9e4a5f",
+    "content-hash": "e1f2160161efe6c414d0f61ed09cc683",
+    "packages": [
+        {
+            "name": "ec-europa/ssk",
+            "version": "dev-feature/platform",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ec-europa/ssk.git",
+                "reference": "e0bc39b9df25204f265d4aec74c9a874b332f00f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ec-europa/ssk/zipball/e0bc39b9df25204f265d4aec74c9a874b332f00f",
+                "reference": "e0bc39b9df25204f265d4aec74c9a874b332f00f",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Subsite Starter Kit packaged for composer",
+            "time": "2017-08-10 06:32:44"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [
+        {
+            "alias": "3.0.0",
+            "alias_normalized": "3.0.0.0",
+            "version": "dev-feature/platform",
+            "package": "ec-europa/ssk"
+        }
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "ec-europa/ssk": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
